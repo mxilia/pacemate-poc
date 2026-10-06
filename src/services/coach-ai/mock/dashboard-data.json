@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "timezone": "Asia/Bangkok",
+  "weeklyRunTarget": 3,
+  "monthlyProgression": [
+    { "monthsAgo": 5, "distanceKm": 2.5 },
+    { "monthsAgo": 4, "distanceKm": 2.5 },
+    { "monthsAgo": 3, "distanceKm": 3.2 },
+    { "monthsAgo": 2, "distanceKm": 5.1 },
+    { "monthsAgo": 1, "distanceKm": 6.2 },
+    { "monthsAgo": 0, "distanceKm": 6.2 }
+  ],
+  "recentRuns": [
+    { "daysAgo": 2, "distanceKm": 4, "seconds": 1560 },
+    { "daysAgo": 1, "distanceKm": 5, "seconds": 1980 },
+    { "daysAgo": 0, "distanceKm": 4.2, "seconds": 1680 }
+  ],
+  "nutrition": {
+    "recommended": { "carbs": 280, "fat": 70, "protein": 120, "caloriesKcal": 2230 },
+    "consumed": { "carbs": 180, "fat": 42, "protein": 78 }
+  }
+}

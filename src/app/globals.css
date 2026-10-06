@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+
+.pacemate-modal::backdrop {
+  background: rgb(7 17 31 / 60%);
+  backdrop-filter: blur(4px);
+}
+
+:root {
+  --background: #edf1f6;
+  --foreground: #102b50;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+button,
+input,
+textarea {
+  letter-spacing: 0;
+}
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #b7ccee;
+  outline-offset: 3px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a2b6d4 #edf1f6;
+}
+.sport-panel {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #bfcde0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+.stat-panel {
+  border-top: 3px solid #005cff;
+}
+.stat-panel svg {
+  color: #005cff;
+}
+.stat-panel > p:first-of-type {
+  color: #102b50;
+}
+.today-panel {
+  background: #304eab;
+  border-color: #304eab;
+  color: white;
+}
+.today-panel p,
+.today-panel span {
+  color: #d7e7ff;
+}
+.today-panel .panel-title {
+  color: white;
+}
+.today-panel > div:last-child {
+  border-color: #5480d0;
+}
+.today-panel .sport-button-primary {
+  background: white;
+  color: #153d8d;
+  border-color: white;
+}
+.today-panel .sport-button-primary:hover {
+  background: #dceaff;
+}
+.goal-panel {
+  background: #e5edfc;
+  border-color: #a9bde0;
+}
+.coach-panel {
+  border-color: #a9bde0;
+}
+.coach-panel > div:first-child {
+  border-color: #c5d3e8;
+}
+.coach-panel > div:first-child > div > div:first-child {
+  background: #005cff;
+  color: white;
+}
+.panel-title {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: Impact, 'Arial Narrow', sans-serif;
+  text-transform: uppercase;
+  color: #102b50;
+}
+.pacemate-heading {
+  font-family: Impact, 'Arial Narrow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #005cff;
+  line-height: 1;
+}
+.sport-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #b6c7e2;
+  border-radius: 6px;
+  background: #e3ebfb;
+  font-size: 12px;
+  font-weight: 600;
+  color: #214386;
+  transition: background 150ms;
+}
+.sport-button:hover {
+  background: #d2e0fa;
+}
+.sport-button-primary {
+  background: #005cff;
+  border-color: #005cff;
+  color: #ffffff;
+}
+.sport-button-primary:hover {
+  background: #1d4ed8;
+}
+.sport-button:disabled {
+  opacity: 0.4;
+}
+.sport-progress {
+  display: block;
+  width: 100%;
+  height: 6px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 4px;
+  background: #d8e2f1;
+}
+.sport-progress::-webkit-progress-bar {
+  background: #d8e2f1;
+}
+.sport-progress::-webkit-progress-value {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+.sport-progress::-moz-progress-bar {
+  background: #3b82f6;
+}
+@media (max-width: 639px) {
+  .sport-panel {
+    padding: 18px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

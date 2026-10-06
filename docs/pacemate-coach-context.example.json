@@ -1,0 +1,61 @@
+{
+  "context": {
+    "version": "1.0",
+    "generatedAt": "2026-10-06T05:00:00.000Z",
+    "timezone": "Asia/Bangkok",
+    "profile": {
+      "health": {
+        "weightKg": "70",
+        "heightCm": "175",
+        "age": "30",
+        "medicalConditions": ""
+      },
+      "goal": "First 10K",
+      "level": "Beginner",
+      "currentAbility": "I can run 7 km",
+      "schedule": {
+        "daysPerWeek": "3",
+        "days": ["Monday", "Wednesday", "Saturday"],
+        "time": "Morning"
+      },
+      "trainingLoad": "Balanced",
+      "consistencyBlocker": "Busy weekdays",
+      "partnerPreference": {
+        "ageRange": "25-40",
+        "level": "Any level",
+        "gender": "No preference"
+      }
+    },
+    "plan": null,
+    "runs": [],
+    "today": {
+      "date": "2026-10-06",
+      "day": "Tuesday",
+      "session": null,
+      "nextSession": null,
+      "meals": [],
+      "nutritionTargets": { "carbs": 280, "fat": 70, "protein": 120, "caloriesKcal": 2230 },
+      "macros": {
+        "carbs": 0,
+        "fat": 0,
+        "protein": 0
+      }
+    },
+    "progress": {
+      "streakDays": 0,
+      "runsThisWeek": 0,
+      "weeklyRunTarget": 0,
+      "distanceThisWeekKm": 0,
+      "longestRunKm": 7,
+      "targetDistanceKm": 10,
+      "goalPercent": 70
+    },
+    "dailyAdvice": "Tell me about your running and we will build a week that works for you."
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "How close am I to my 10K goal?"
+    }
+  ]
+}
